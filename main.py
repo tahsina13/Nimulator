@@ -13,7 +13,6 @@ def main():
     pygame.init()
     window = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption('Nimulator')
-    # game = Nim([10, 5, 7, 2, 1, 4, 6, 8, 3, 9])
     game = Nim(list([randint(1, 10) for _ in range(0, 10)]), 
         list([randint(1, 10) for _ in range(0, 10)]))
     screen = MainScreen(GOLF_BALL_SPRITE , game)
